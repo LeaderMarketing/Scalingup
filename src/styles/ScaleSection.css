@@ -1,0 +1,169 @@
+.scale-section {
+  background-color: var(--background-color);
+  padding: 4rem 1rem;
+  color: white;
+}
+
+.section-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.scale-container {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.scale-content {
+  flex: 0 0 478px;
+  max-width: 478px;
+}
+
+.scale-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.scale-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.video-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  width: 100%;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://jcardenasleader.wordpress.com/wp-content/uploads/2024/12/verne_video_thumbnail.jpg');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* Hide thumbnail and play button once video starts playing */
+.video-wrapper.playing .thumbnail-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent white;
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .scale-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .scale-content,
+  .video-container {
+    max-width: 100%;
+  }
+
+  .scale-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .scale-section {
+    padding: 2rem 1rem;
+  }
+
+  .scale-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-icon {
+    border-width: 12px 0 12px 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .scale-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 20px;
+  }
+
+  .scale-content {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+} 

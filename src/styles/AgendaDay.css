@@ -1,0 +1,50 @@
+.agenda-day {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.day-header {
+  padding: 2.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.day-header h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.day-header h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.agenda-items {
+  padding: 0 2.5rem;
+}
+
+.agenda-item {
+  padding: 1.5rem 0rem;
+  border-bottom: 1px solid #a200f3;
+}
+
+.agenda-item:last-child {
+  border-bottom: none;
+}
+
+.agenda-item h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.agenda-item p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}

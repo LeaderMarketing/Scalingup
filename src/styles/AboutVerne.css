@@ -1,0 +1,116 @@
+.about-verne {
+  background-color: var(--background-color);
+  padding: 4rem 1rem;
+  color: white;
+}
+
+.about-verne-card {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: url('https://jcardenasleader.wordpress.com/wp-content/uploads/2024/12/scaleup_theme_bg.jpg');
+  background-size: 1920px 814px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.verne-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.verne-image img {
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+.card-content {
+  max-width: 780px;
+  padding: 3rem 0 3rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-verne h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-verne h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 2.5rem;
+}
+
+.about-verne p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.bio-button {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.bio-button:hover {
+  background-color: #ffb73d;
+}
+
+@media (max-width: 1024px) {
+  .verne-image {
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-verne-card {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .card-content {
+    padding: 2rem;
+    margin-left: 0;
+  }
+
+  .about-verne h1 {
+    font-size: 3rem;
+  }
+
+  .about-verne h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-verne h1 {
+    font-size: 2.5rem;
+  }
+} 

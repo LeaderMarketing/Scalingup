@@ -1,0 +1,58 @@
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 120s linear infinite;
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+}
+
+.scroll-item {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  flex: 0 0 25%;
+  min-width: 400px;
+  box-sizing: border-box;
+  transition: filter 0.3s ease;
+}
+
+.scroll-item:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.scroll-arrow {
+  min-width: 20px;
+  min-height: 20px;
+  stroke-width: 2.5;
+}
+
+@media (max-width: 768px) {
+  .scroll-arrow {
+    min-width: 18px;
+    min-height: 18px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} 

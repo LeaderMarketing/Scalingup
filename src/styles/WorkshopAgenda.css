@@ -1,0 +1,37 @@
+.workshop-agenda {
+  background-color: var(--background-color);
+  padding: 60px 20px;
+  color: white;
+}
+
+.workshop-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.workshop-title span {
+  color: #f6a500;
+}
+
+.agenda-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .agenda-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .workshop-title {
+    font-size: 36px;
+  }
+}

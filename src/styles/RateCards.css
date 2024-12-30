@@ -1,0 +1,117 @@
+.rate-cards {
+  background-color: var(--background-color);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.rate-cards-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: .5rem 0 2.5rem;
+}
+
+.rate-card {
+  border-radius: 12px;
+  padding: 2.2rem .5rem;
+  min-width: 280px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.rate-card:hover {
+  transform: translateY(-8px);
+}
+
+.rating {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.rating-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+}
+
+.city {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.country {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.rate-cards-footer h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.rate-cards-footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .rate-cards-title {
+    font-size: 2rem;
+  }
+
+  .cards-container {
+    gap: 1rem;
+  }
+
+  .rate-card {
+    min-width: 200px;
+    padding: 1.5rem;
+  }
+
+  .rating {
+    font-size: 3rem;
+  }
+
+  .rating-label {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .city {
+    font-size: 18px;
+  }
+
+  .country {
+    font-size: 14px;
+  }
+
+  .rate-cards-footer h3 {
+    font-size: 1.5rem;
+  }
+} 

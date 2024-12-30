@@ -1,0 +1,25 @@
+.sticky-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3a245e;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  z-index: 1001;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
+}
+
+.contact-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 550;
+} 
+
+@media (max-width: 768px) {
+  .sticky-bar {
+    font-size: 0.65rem;
+  }
+}

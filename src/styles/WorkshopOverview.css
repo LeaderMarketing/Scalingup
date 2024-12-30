@@ -1,0 +1,128 @@
+.workshop-overview {
+    background-color: var(--background-color);
+    padding: 4rem 1rem;
+    color: white;
+  }
+  
+  .overview-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+  
+  .overview-content {
+    flex: 0 0 465px;
+  }
+  
+  .overview-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+  }
+  
+  .subtitle span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+  
+  .overview-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .overview-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .card-icon {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .card-icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-icon.orange { background-color: #b6821a; }
+.card-icon.blue { background-color: #3980a3; }
+.card-icon.brown { background-color: #817452; }
+.card-icon.green { background-color: #849225; }
+  /* Updated background colors to match the screenshot */
+  .card:nth-child(1) { background-color: #f9a719; }
+  .card:nth-child(2) { background-color: #00A3E0; }
+  .card:nth-child(3) { background-color: #af9e7c; }
+  .card:nth-child(4) { background-color: #b4d234; }
+  
+  .overview-card-content {
+    padding: 1.3rem;
+    flex: 1;
+  }
+  
+  .overview-card-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Updated paragraph styles */
+  .overview-card-content p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .overview-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .overview-content {
+      flex: 1;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .workshop-overview {
+      padding: 2rem 1rem;
+    }
+  
+    .overview-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .overview-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle span {
+      font-size: 1.25rem;
+    }
+  }
+
